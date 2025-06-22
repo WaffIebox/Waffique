@@ -3,7 +3,7 @@
 
 
     body {
-        background-color: black;
+        background-color: white;
     }
 
     a {
@@ -12,6 +12,7 @@
     }
 
     .nav-bar {
+        font: bold;
         display: flex;
     }
 
@@ -19,18 +20,18 @@
     .title {
         text-indent: 5ch;
         font-size: 78px;
-        color:red;
+        color: black;
     }
 
     .subtitle {
-        color: white;
+        color: purple;
         margin-top: 105px;
         text-indent: -18ch;
     }
 
 
     .nav-links {
-        color: green;
+        color: darkblue;
         gap: 50px;
         font-size: 28px;
         display: flex;
