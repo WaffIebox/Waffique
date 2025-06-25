@@ -1,7 +1,4 @@
 
-
-
-
     body {
         background-color: white;
     }
@@ -17,16 +14,12 @@
     }
 
 
-    .title {
-        text-indent: 5ch;
-        font-size: 78px;
-        color: black;
-    }
 
     .subtitle {
         color: purple;
-        margin-top: 105px;
-        text-indent: -18ch;
+        font-size: 28px;
+        margin-top: 35px;
+       /* text-indent: -18ch; */
     }
 
 
@@ -42,4 +35,12 @@
     .search-bar{
         text-indent: 122px;
         margin-top: 43px;
+    }
+
+
+    .title {
+        text-indent: -650px;
+        font-size: 78px;
+        margin-top: 250px;
+        color: black;
     }
