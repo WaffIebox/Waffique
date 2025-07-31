@@ -1,12 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header.jsx';
+import './styles/App.css';
 
 function App() {
   return (
   <div>
-    <p>
-      Waffique
-    </p>
+      <Header />
   </div>
   );
 }
