@@ -8,25 +8,31 @@
         <meta name="viewport"
         content=width=device-width,
         initial-scale="1.0">
-        <title>Beals on Wheels</title>
-
-
+        <link rel="stylesheet" href="../styles/styling.css" />
+        <title>Waffique</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Blaka+Hollow&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
     </head>
 
 
-        <body>
-        <h2>Contact</h2>
+    <div id="header-placeholder"></div>
 
-        <p>
+    <script>
+    fetch('heading.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+    </script>
 
-            <ol>
 
-            <li><b>Seth:</b> sbeals202@gmail.com </li> 
-            <li><b>Wyatt:</b> wbeals202@gmail.com </li> 
-            <li><b>Boden:</b> bbeals202@gmail.com </li>
-            <li><b>Ryker:</b> rbeals202@gmail.com </li>
 
-            </ol>
-        </p>
-
-    </body>
+<contact>
+    <p>
+        But all my tears have been used up
+    </p>
+</contact>
