@@ -5,37 +5,109 @@
         background-color: #272757;
     }
 
-    .content {
-        border: 35px #FFEF00;
-        margin: 0;
-        padding: 10px;
-        box-sizing: border-box;
-    }
+.beta-badge {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #f5c542; /* soft yellow */
+  color: black;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 1000;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
 
     a {
         text-decoration: none; 
         color: inherit;
     }
 
+    #background-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        min-height: 100%;
+        min-width: 100%;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+
+
+
     .title {
         text-align: center;
         font-size: 80px;
-        color: #FFEF00;
-        -webkit-text-stroke: 1px #90D5FF;
+        color: red;
+        -webkit-text-stroke: 1px brown;
         font-family: 'Blaka Hollow', sans-serif;
     }
 
 
+    .title:hover {
+        color: red;
+        -webkit-text-stroke: 1px black;
+    }
+
+
     .nav-links {
+        display: flex;
+        justify-content: center;
         font-family: Teko, sans-serif;
-        color: #90D5FF;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid white;
+        padding-bottom: 40px;
+    }
+
+.quote-button {
+
+    display: inline-block;
+        color: black;
         font-size: 30px;
+        font-weight: bold;
         text-align: center;
         margin-top: 3ch;
-        word-spacing: 5ch;
-    }
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+}
+
+.quote-button:hover {
+    background-color: red;
+}
 
 
-    .contact {
-        color: white;
-    }
+.image-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+}
+
+.image-boxes img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.image-boxes img:hover {
+  transform: scale(1.05);
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+}
