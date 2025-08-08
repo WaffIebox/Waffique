@@ -28,6 +28,7 @@
     .title {
         text-align: center;
         font-size: 80px;
+        padding: 10px;
         color: red;
         -webkit-text-stroke: 1px brown;
         font-family: 'Blaka Hollow', sans-serif;
@@ -39,11 +40,19 @@
         -webkit-text-stroke: 1px black;
     }
 
+    .sub-title {
+      color: white;
+      font-family: Teko, sans-serif;
+      font-size: 25px;
+      text-align: center;
+      padding: 15px;
+    }
+
 
     .nav-links {
         display: flex;
         justify-content: center;
-        font-family: sans-serif;
+        font-family: Teko, sans-serif;
         border-top: 1px solid #eee;
         border-bottom: 1px solid white;
         padding-bottom: 40px;
