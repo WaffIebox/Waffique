@@ -90,6 +90,9 @@
 }
 
 .site-footer {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
   text-align: center;
   font-size: 13px;
   color: white;
