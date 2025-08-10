@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import waffique_logo from '../assets/Waffique_Logo.png'
 
 const Help = () => {
 
@@ -6,10 +7,17 @@ const Help = () => {
 
       <div className="help">
 
-        <h3 className='waffique_trademark'>
-            Waffique™_creates_fully_custom_websites_and_portfolios_with_the_option_for_regular_maintenance_and_input
-        </h3>
+        {/* <div className='title'>
+            <Link to="/"><img className='waffique_logo' src={waffique_logo}></img></Link>
+            {/* <a href='/' className='waffique_name'>Waffique</a> */}
+        
 
+
+        <nav className="nav-links">
+                <Link to='/' className='title'>Home</Link>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXr4SZfwOv6yblz0IlhUNvKJGGlopr9Phs9hW8DbpgeUnNig/viewform?usp=preview" target="_blank" className="quote-button">Get a Quote</a>
+                <Link to="/contact" className="contact-header">Contact</Link>
+        </nav>
     
     
     </div>

@@ -4,11 +4,27 @@ import contact_info from '../Contact_info.jpg';
 const Contact = () => {
   return (
 
+    <div className='contact'>
 
-        <div className="contact">
-            <img className='contact_info' src={contact_info} alt="Contact_Info" />
-        </div>
 
+
+        <nav className="contact-tabs">
+            <a className="contact-button">Email</a>
+        </nav>
+
+        <nav className="contact-info">
+            <a className="contact-button">contact@waffique.com</a>
+          </nav>
+      
+        <nav className="contact-tabs">
+            <a className="contact-button">Email</a>
+        </nav>
+
+        <nav className="contact-info">
+            <a className="contact-button">contact@waffique.com</a>
+          </nav>
+        
+    </div>
 
    );
 };

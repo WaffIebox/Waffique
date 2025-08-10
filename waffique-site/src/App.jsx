@@ -16,9 +16,11 @@ function App() {
     <Router>
       
       <div>
-      
-        {/* <Help></Help> */}
+
         <Header />
+        
+        <Help></Help>    
+
 
         <Routes>
 
