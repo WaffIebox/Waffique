@@ -1,5 +1,5 @@
 import React from 'react';
-import ShopifyProduct from '../products/ShopifyProduct.jsx'; // Assuming ShopifyProduct is in another file
+import ShopifyProduct from '../products/ProductsPage.jsx'; // Assuming ShopifyProduct is in another file
 
 const Seasonal = () => {
   return (

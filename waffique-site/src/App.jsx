@@ -4,6 +4,7 @@ import Footer from './components/Footer.jsx';
 import Help from './components/Help.jsx';
 import './styles/App.css';
 import './styles/index.css';
+import './styles/ShopifyProduct.css';
 import Home from './pages/Home.jsx';
 import Portfolios from './pages/Portfolios.jsx';
 import Websites from './pages/Websites.jsx';

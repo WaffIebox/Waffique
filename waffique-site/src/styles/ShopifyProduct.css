@@ -1,0 +1,44 @@
+.product-section {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: red;
+}
+
+.product-wrapper {
+    display: flex;
+    flex-direction: column; 
+  background: orange;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  max-width: 420px;
+  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.product-description,
+.whats_included,
+.license-terms,
+.refund-policy {
+  margin-top: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: red;
+}
+
+p {
+  font-size: 0.7rem;
+  color: black;
+}

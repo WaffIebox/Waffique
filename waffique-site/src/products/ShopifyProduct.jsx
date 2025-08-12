@@ -1,32 +1,29 @@
-import React, { useEffect } from 'react';
+// components/ShopifyProduct.jsx
+import React, { useEffect } from "react";
 
-export default function ShopifyProduct() {
+export default function ShopifyProduct({ productId, title, description, included_1, included_2, license, refund }) {
   useEffect(() => {
-    const scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    const scriptURL = "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
 
     function ShopifyBuyInit() {
       if (!window.ShopifyBuy) return;
 
       const client = window.ShopifyBuy.buildClient({
-        domain: 'hxy03w-hs.myshopify.com',
-        storefrontAccessToken: 'ac7fe13cbb0758b428fe09778bf8ed37',
+        domain: "hxy03w-hs.myshopify.com",
+        storefrontAccessToken: "ac7fe13cbb0758b428fe09778bf8ed37",
       });
 
       window.ShopifyBuy.UI.onReady(client).then((ui) => {
-        
-        ui.createComponent('product', {
-          id: '9859002073386',
-          node: document.getElementById('product-component-1754940836707'),
-          moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: {
-            /* your options here */
-          },
+        ui.createComponent("product", {
+          id: productId,
+          node: document.getElementById(`product-component-${productId}`),
+          moneyFormat: "%24%7B%7Bamount%7D%7D",
         });
       });
     }
 
     function loadScript() {
-      const script = document.createElement('script');
+      const script = document.createElement("script");
       script.async = true;
       script.src = scriptURL;
       script.onload = ShopifyBuyInit;
@@ -42,44 +39,35 @@ export default function ShopifyProduct() {
     } else {
       loadScript();
     }
-  }, []);
+  }, [productId]);
 
   return (
-    <>
-      <section className="product-section">
-        <div className="product-wrapper">
-          <h2 className="product-heading">Seasonal Product</h2>
-          <div id="product-component-1754940836707"></div>
-        </div>
-      </section>
+    <section className="product-section">
+      <div className="product-wrapper">
+        <h2 className="product-heading">{title}</h2>
+        <div id={`product-component-${productId}`}></div>
 
-      <style jsx>{`
-        .product-section {
-          display: flex;
-          justify-content: center;
-          padding: 3rem 1rem;
-          background: red;
-        }
-        .product-wrapper {
-          background: white;
-          border-radius: 20px;
-          padding: 2rem;
-          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-          max-width: 420px;
-          text-align: center;
-          transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .product-wrapper:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-        }
-        .product-heading {
-          font-size: 1.75rem;
-          font-weight: 700;
-          color: black;
-          margin-bottom: 1.5rem;
-        }
-      `}</style>
-    </>
+        <div className="product-description">
+          <h3>Description</h3>
+          <p>{description}</p>
+        </div>
+
+        <div className="whats_included">
+          <h3>Included:</h3>
+          <p>{included_1}</p>
+          <p>{included_2}</p>
+        </div>
+
+        <div className="license-terms">
+          <h3>License</h3>
+          <p>{license}</p>
+        </div>
+
+        <div className="refund-policy">
+          <h3>Refund Policy</h3>
+          <p>{refund}</p>
+        </div>
+      </div>
+    </section>
   );
 }
