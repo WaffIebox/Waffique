@@ -14,9 +14,11 @@ const Help = () => {
 
 
         <nav className="nav-links">
-                <Link to='/' className='title'>Home</Link>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXr4SZfwOv6yblz0IlhUNvKJGGlopr9Phs9hW8DbpgeUnNig/viewform?usp=preview" target="_blank" className="quote-button">Get a Quote</a>
-                <Link to="/contact" className="contact-header">Contact</Link>
+                <Link to='/seasonal' className='title'>Seasonal</Link>
+                <Link to='/' className="quote-button">Calendars</Link>
+                <Link to="/" className="title">To-Do-Lists</Link>
+                <Link to="/" className="title">Websites</Link>
+                <Link to="/" className="title">Other</Link>
         </nav>
     
     

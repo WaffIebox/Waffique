@@ -1,25 +1,34 @@
-import website_box from '../assets/custom_website.png'
-import blog_box from '../assets/custom_blog.png'
-import portfolio_box from '../assets/custom_portfolio.png'
-import other_box from '../assets/custom_other.png'
 import social_media from '../assets/social_media.png'
+import social_vid from '../assets/www.waffique.com.mp4'
+import september from '../assets/september.png'
 
 const Home = () => {
   return (
 
     <home>
 
+      <div className='home_page'>
+
+
         <div className='sample_website'>
           <img src={social_media} alt="Media Home" />
         </div>
-
-        <div className="image-boxes">
-            <img src={website_box} alt="Wesbites That Win" />
-            <img src={portfolio_box} alt="Portfolios That Pop" />
-            <img src={blog_box} alt="Blogs That Boom" />
-            <img src={other_box} alt="Other That Other" />
-
+                
+        <div className='waff_vid'>
+          <video width="600" autoPlay loop muted>
+            <source src={social_vid} alt="Vid Home" />
+          </video>
+        
         </div>
+
+      </div>
+
+      <div className='sept_sale'>
+        <a href='/seasonal'><img src={september} alt='sept' /></a>
+      </div>
+
+
+
 
     </home>
 

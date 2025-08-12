@@ -12,14 +12,8 @@ const Header = () => {
             
 
 
-        
-        
-        <div className="waffique_text">
-            <a>Waffique</a>
-        </div>
-
         <div className="helper">
-            <a>Help</a>
+            <Link to='/'>Home</Link>
         </div>
 
 

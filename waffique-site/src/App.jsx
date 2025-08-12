@@ -8,7 +8,8 @@ import Home from './pages/Home.jsx';
 import Portfolios from './pages/Portfolios.jsx';
 import Websites from './pages/Websites.jsx';
 import Contact from './pages/Contact.jsx';
-import Login from './pages/Login.jsx';
+import Seasonal from './pages/Seasonal.jsx';
+
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
           <Route path="/portfolios" element={<Portfolios />} />
           <Route path="/websites" element={<Websites />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/seasonal" element={<Seasonal />} />
 
         </Routes>
 
