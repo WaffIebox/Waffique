@@ -1,14 +1,15 @@
 .product-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
   padding: 3rem 1rem;
   background: red;
 }
 
 .product-wrapper {
-    display: flex;
-    flex-direction: column; 
-  background: orange;
+  display: flex;
+  flex-direction: column; 
+  background: white;
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
